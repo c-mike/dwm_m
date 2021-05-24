@@ -1,7 +1,13 @@
 #! /bin/bash
 
-# img de funco
-nitrogen --restore &
+if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ];
+then
+   # img de funco
+   nitrogen --restore &
+
+else
+   echo "Nao e GNOME"
+fi
 
 # status bar "dwm-bar"
 # /home/c-mike/Git/dwm-bar/dwm_bar.sh &
