@@ -1,11 +1,12 @@
 DWM - dynamic window manager
-============================
 
 Installation
-------------
 # sudo chmod +x installation.sh
-./installation.sh
+./install.sh
 
 Session configuration
----------------------
-The session it's already configured, in case you some Display Manager
+Change the file ~/.xinitrc and /etc/X11/xinit/xinitrc
+
+    # Make sure this is before the 'exec' command or it won't be sourced.
+    [ -f /etc/xprofile ] && . /etc/xprofile
+    [ -f ~/.xprofile ] && . ~/.xprofile
