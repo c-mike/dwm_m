@@ -2,11 +2,11 @@
 
 if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ];
 then
-   # img de funco
-   nitrogen --restore &
+   echo "e GNOME"
 
 else
-   echo "Nao e GNOME"
+   # img de fundo
+   nitrogen --restore &
 fi
 
 # status bar "dwm-bar"
