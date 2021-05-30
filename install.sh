@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#                                           top bar
+./bar_install
+
 #                                           config
 echo "so na copia config pa orig file..."
 sudo cp config.def.h config.h
