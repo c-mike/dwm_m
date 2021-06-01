@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#                                           dependencias
+echo "Dependencias: [xorg-xinit]"
+if ! [ "pacman -Qs xorg-xinit " ]
+then
+   echo "so na instala dependencias"
+   sudo pacman -S xorg-xinit
+fi
+
 #                                           top bar
 ./bar_install
 

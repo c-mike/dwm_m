@@ -7,16 +7,9 @@ then
 else
    # img de fundo
    nitrogen --restore &
+
+   # topBar
+   #dwmstatus 2>&1 >/dev/null &
+   
 fi
 
-# status bar "dwm-bar"
-# /home/c-mike/Git/dwm-bar/dwm_bar.sh &
-
-# Statusbar loop
-#while true; do
-   #xsetroot -name "$( date +"%F %R" )"
-   #sleep 1m    # Atualiza a cada minuto
-#done &
-
-#dwmstatus
-#dwmstatus 2>&1 >/dev/null &
