@@ -1,10 +1,11 @@
 #!/bin/bash
 
 #                                           dependencias
+#  libxft-bgra picom
 echo "Dependencias: [xorg-xinit]"
 if ! [ "pacman -Qs xorg-xinit " ]
 then
-   echo "so na instala dependencias"
+   echo "so na instala dependencias..."
    sudo pacman -S xorg-xinit
 fi
 
