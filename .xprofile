@@ -1,15 +1,14 @@
 #! /bin/bash
 
-if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ];
-then
+if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ]; then
    echo "e GNOME"
-
 else
+   # export path of scripts
+   export PATH=$PATH:"/home/c-mike/CProjects/dwm_m/topBar/scripts"
+
    # img de fundo
    nitrogen --restore &
 
-   # topBar
-   #dwmstatus 2>&1 >/dev/null &
-   
+   # topBar 
+   dwmstatus 2>&1 >/dev/null 
 fi
-

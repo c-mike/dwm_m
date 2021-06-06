@@ -2,4 +2,5 @@
 
 echo "so na installa topBar..."
 cd topBar/
-sudo make clean install
+    cc dwmblocks.c -o  dwmblocks -lX11
+    sudo make clean install

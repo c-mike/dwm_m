@@ -25,9 +25,8 @@ echo "so na configura xprofile..."
 cp .xprofile ~/
 
 #                                           session configuration
-echo "so na configura xsessions..."
-if ! [ -e /usr/share/xsessions/dwm.desktop ];
-then
+if ! [ -e /usr/share/xsessions/dwm.desktop ]; then
+   echo "so na configura xsessions..."
    sudo cp dwm.desktop /usr/share/xsessions/
 fi
 
