@@ -2,15 +2,16 @@
 
 #                                           dependencias
 #  libxft-bgra picom
-echo "Dependencias: [xorg-xinit]"
-if ! [ "pacman -Qs xorg-xinit " ]
-then
-   echo "so na instala dependencias..."
-   sudo pacman -S xorg-xinit
-fi
+# echo "Dependencias: [xorg-xinit]"
+# if ! [ "pacman -Qs xorg-xinit " ]; then
+#    echo "so na instala dependencias..."
+#    sudo pacman -S xorg-xinit
+# fi
 
 #                                           top bar
-./bar_install
+
+echo "so na installa ddwmblocks..."
+./bar_install.sh
 
 #                                           config
 echo "so na copia config pa orig file..."

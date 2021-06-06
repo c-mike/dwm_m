@@ -1,5 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
+#include <X11/XF86keysym.h> // para volume
+
+/* constante pa volume */
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
@@ -61,6 +68,12 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static Key keys[] = {
+	
+	/* pa volumes */
+	{ MODKEY,                       XK_F2, spawn, {.v = downvol } },
+	{ MODKEY,                       XK_F1,  spawn, {.v = mutevol } },
+	{ MODKEY,                       XK_F3, spawn, {.v = upvol   } },
+
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
