@@ -9,6 +9,7 @@ else
    # img de fundo
    nitrogen --restore &
 
-   # topBar 
-   dwmstatus 2>&1 >/dev/null 
+   # topBar
+   cd /home/c-mike/CProjects/dwm_m/topBar/
+   dwmblocks 2>&1 >/dev/null 
 fi
