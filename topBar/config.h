@@ -4,10 +4,10 @@ static const Block blocks[] = {
 	/* {"⌨", "sb-kbselect", 0, 30}, */
 	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 	/* {"",	"configs/sb-music",	0,	11}, */
-	{"",	"scripts/volume",	0,	10},
-	{"",	"scripts/battery",	5,	3},
-	{"",	"scripts/clock",	60,	1},
-	{"",	"scripts/internet",	5,	4},
+	{"",	"volume",	0,	10},
+	{"",	"battery",	5,	3},
+	{"",	"clock",	60,	1},
+	{"",	"internet",	5,	4},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
