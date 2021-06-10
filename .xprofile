@@ -4,14 +4,15 @@ if [ "$XDG_CURRENT_DESKTOP" = "GNOME" ]; then
    echo "e GNOME"
 else
    # export path of scripts
-   export battery=/home/c-mike/CProjects/dwm_m/topBar/scripts/battery
-   export clock=/home/c-mike/CProjects/dwm_m/topBar/scripts/clock
-   export internet=/home/c-mike/CProjects/dwm_m/topBar/scripts/internet
-   export volume=/home/c-mike/CProjects/dwm_m/topBar/scripts/volume
+   # export battery=/home/c-mike/CProjects/dwm_m/topBar/scripts/battery
+   # export clock=/home/c-mike/CProjects/dwm_m/topBar/scripts/clock
+   # export internet=/home/c-mike/CProjects/dwm_m/topBar/scripts/internet
+   # export volume=/home/c-mike/CProjects/dwm_m/topBar/scripts/volume
 
    # img de fundo
    nitrogen --restore &
 
    # topBar
+   cd /home/c-mike/CProjects/dwm_m/topBar
    dwmblocks 2>&1 >/dev/null &
 fi
