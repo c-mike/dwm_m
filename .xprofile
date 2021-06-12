@@ -15,4 +15,6 @@ else
    # topBar
    cd /home/c-mike/CProjects/dwm_m/topBar
    dwmblocks 2>&1 >/dev/null &
+   cd
+   
 fi
